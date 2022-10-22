@@ -11,7 +11,7 @@ pop3	= conf.pop3;
 
 user	= ("%s:%s"):format(pop3.user,pop3.password);
 url	= ("%s://%s"):format(pop3.tls and "pop3" or "pop3s",pop3.server);
-pipe	= io.popen(("curl 2>/dev/null --user %s %s"):format(user,url),"r");
+pipe	= io.popen(("curl -s --user %s %s"):format(user,url),"r");
 output = pipe:read("a");
 count = 0;
 for _ in string.gmatch(output,"\n")
