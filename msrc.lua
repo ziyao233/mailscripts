@@ -12,5 +12,6 @@ return {
 				user		= "",
 				password	= "",
 				tls		= true,
+				from		= "addr@example.com",
 			  },
        };
