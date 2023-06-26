@@ -1,9 +1,11 @@
+#!/usr/bin/env lua
+
 --[[
 --	mailscripts
---	ms-stat
+--	ms-send
 --	curl is required
---	By MIT License.
---	Copyright (c) 2022 Ziyao.
+--	By Mozilla Public License Version 2.0
+--	Copyright (c) 2022-2023 Ziyao. All rights reserved.
 --]]
 
 assert(arg[1] and arg[2],"Usage: " .. arg[0] .. " TO_ADDRESS File");
