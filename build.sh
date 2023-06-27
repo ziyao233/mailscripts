@@ -8,7 +8,7 @@
 # This script build scripts with lmerge
 
 commonModule=ms-common.lua
-scripts="ms-recv ms-stat ms-send ms-fetch-thread"
+scripts="ms-recv ms-stat ms-send ms-fetch-thread ms-mbox-split"
 
 mkdir -p ./build
 

@@ -6,19 +6,20 @@ a mail agent.
 
 ## Dependency
 
-These scripts depends on ``curl``, ``Lua 5.4`` (with io.popen support)
+These scripts depends on `curl`, `Lua 5.4` (with io.popen support)
 
 ## Configuration
 
-A configuration file, ``~/.msrc.lua`` is loaded.
+A configuration file, `~/.msrc.lua` is loaded.
 
-An example is contained (see ``msrc.lua``)
+An example is contained (see `msrc.lua`)
 
 ## Commands
 
-- ``ms-send`` : send a file by SMTP
-- ``ms-stat`` : get the status of a POP3 mailbox
-- ``ms-recv`` : receive mails from a POP3 mailbox
-- ``ms-rfc822`` : spawn the format of RFC822
+- `ms-send` : send a file by SMTP
+- `ms-stat` : get the status of a POP3 mailbox
+- `ms-recv` : receive mails from a POP3 mailbox
+- `ms-fetch-thread`: Fetch a thread from the public mail box (lore.kenrel.org)
+- `ms-mbox-split`: Split a mbox file
 
 ## Workflow
