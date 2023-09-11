@@ -11,9 +11,9 @@
 conf	= assert(loadfile(os.getenv("HOME") .. "/.msrc.lua"))();
 pop3	= conf.pop3;
 
-user	= ("%s:%s"):format(pop3.user,pop3.password);
-url	= ("%s://%s"):format(pop3.tls and "pop3" or "pop3s",pop3.server);
-pipe	= io.popen(("curl -s --user %s %s"):format(user,url),"r");
+user	= ("%s:%s"):format(pop3.user, pop3.password);
+url	= ("%s://%s"):format(pop3.tls and "pop3s" or "pop3", pop3.server);
+pipe	= io.popen(("curl -s --user %s %s -v"):format(user,url),"r");
 output = pipe:read("a");
 count = 0;
 for _ in string.gmatch(output,"\n")
