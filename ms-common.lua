@@ -19,8 +19,8 @@ end
 
 local function
 getFrom(mail)
-	local id = string.match(mail, [[From:%s*(.->)]]);
-	return id,string.match(id, [[<(.-)>]]);
+	local id = string.match(mail, "From:%s*([^\r\n]-@[^\r\n]-)\r\n");
+	return id, string.match(id, [[<(.-)>]]) or id;
 end
 
 local function
