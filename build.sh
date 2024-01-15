@@ -9,13 +9,15 @@
 
 commonModule=ms-common.lua
 scripts="ms-recv ms-stat ms-send ms-fetch-thread ms-mbox-split"
+interpreter=lua5.4
 
 mkdir -p ./build
 
 for script in $scripts
 do
 	echo Building $script...
-	lmerge -ishb -o build/$script -m $script.lua $script.lua ms-common.lua
+	lmerge -ishb -o build/$script -m $script.lua -i $interpreter \
+		$script.lua ms-common.lua
 	chmod 755 build/$script
 done
 
