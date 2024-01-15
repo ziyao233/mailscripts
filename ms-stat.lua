@@ -1,11 +1,11 @@
-#!/usr/bin/env lua
+#!/usr/bin/env lua5.4
 
 --[[
 --	mailscripts
 --	ms-stat
 --	curl is required
 --	By Mozilla Public License Version 2.0
---	Copyright (c) 2022-2023 Ziyao. All rights reserved.
+--	Copyright (c) 2022-2024 Ziyao. All rights reserved.
 --]]
 
 conf	= assert(loadfile(os.getenv("HOME") .. "/.msrc.lua"))();

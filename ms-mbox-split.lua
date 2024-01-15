@@ -1,10 +1,10 @@
-#!/usr/bin/env lua
+#!/usr/bin/env lua5.4
 
 --[[
 --	mailscripts
 --	ms-mbox-split
 --	By Mozilla Public License Version 2.0
---	Copyright (c) 2023 Yao Zi. All rights reserved.
+--	Copyright (c) 2023-2024 Yao Zi. All rights reserved.
 --]]
 
 local io		= require "io";

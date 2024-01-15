@@ -1,11 +1,11 @@
-#!/usr/bin/env lua
+#!/usr/bin/env lua5.4
 
 --[[
 --	mailscripts
 --	ms-send
 --	curl is required
 --	By Mozilla Public License Version 2.0
---	Copyright (c) 2022-2023 Ziyao. All rights reserved.
+--	Copyright (c) 2022-2024 Ziyao. All rights reserved.
 --]]
 
 assert(arg[1] and arg[2],"Usage: " .. arg[0] .. " TO_ADDRESS File");
